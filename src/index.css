@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
-@import url("https://db.onlinewebfonts.com/c/fd5fc4060a6e4d402fc0c45fad1f852f?family=F29LT+Zarid+Display+Regular");
 
 @tailwind base;
 @tailwind components;
@@ -11,9 +10,9 @@
     line-height: 1.5;
     font-weight: 400;
 
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color-scheme: light;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ffffff;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;

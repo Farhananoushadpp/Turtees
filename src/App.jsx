@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -9,10 +8,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PropTypes from "prop-types";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 import BreastPumbs from "./pages/BreastPumbs";
 import InstaPosts from "./components/InstaPosts";
 import FeedingBottles from "./pages/FeedingBottles";
+import BabyFoods from "./pages/BabyFoods";
 
 const pageVariants = {
   initial: { opacity: 0, y: 50 },
@@ -42,6 +43,7 @@ function AnimatedRoutes() {
           { path: "/", element: <Home /> },
           { path: "/breast-pumbs", element: <BreastPumbs /> },
           { path: "/feeding-bottles", element: <FeedingBottles /> },
+          { path: "/baby-foods", element: <BabyFoods /> },
         ].map(({ path, element }, index) => (
           <Route
             key={index}
@@ -64,19 +66,8 @@ function AnimatedRoutes() {
 }
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <Router>
-      <PageLoader loading={loading} />
       <Header />
       <AnimatedRoutes />
       <InstaPosts />

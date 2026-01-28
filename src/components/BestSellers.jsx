@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const scalevariants = {
@@ -100,13 +101,13 @@ const ProductCard = ({
   img_position,
 }) => (
   <Link
-    className="relative transition-transform duration-300 ease-in-out lg:hover:scale-105"
+    className="relative w-full transition-transform duration-300 ease-in-out lg:hover:scale-105"
     to={link}
   >
     <img
       src={img}
       alt={title}
-      className={`h-80 rounded-3xl object-cover ${img_position} lg:h-auto`}
+      className={`h-80 w-full rounded-3xl object-cover ${img_position} lg:h-auto`}
     />
     <motion.div
       className={`lg:absolute ${position} relative mx-auto -mt-20 flex h-auto w-10/12 flex-col justify-between rounded-2xl lg:top-16 lg:-m-0 lg:h-[540px] lg:w-5/12 ${bg} p-5 lg:p-7`}
@@ -120,11 +121,11 @@ const ProductCard = ({
         <h3 className="text-sm font-bold uppercase leading-tight lg:text-5xl lg:leading-snug">
           {title}
         </h3>
-        <span className="text-sm font-semibold uppercase leading-tight lg:text-5xl">
+        <span className="text-sm font-medium uppercase leading-tight lg:text-5xl">
           {subtitle}
         </span>
         <p
-          className={`mt-1 font-serif text-sm leading-tight lg:mt-3 lg:text-3xl ${text}`}
+          className={`mt-1 text-sm !leading-normal lg:mt-3 lg:text-2xl ${text}`}
         >
           {description}
         </p>

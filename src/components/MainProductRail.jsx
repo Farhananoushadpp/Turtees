@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const products = [
@@ -13,7 +14,7 @@ const products = [
     imgSrc: "/images/product_rails/breast_pumbs.webp",
     title: "Breast Pumps",
     description:
-      "A breast pump helps mothers express and store milk, maintain supply, and offers flexibility for feeding schedules, ensuring convenience and nourishment.",
+      "A breast pump helps mothers express and store milk, maintain supply, and offers flexibility for feeding schedules, ensuring convenience.",
     link: "/breast-pumbs",
   },
   {
@@ -62,10 +63,10 @@ const MainProductRail = () => {
                   src={imgSrc}
                   alt={title}
                 />
-                <h2 className="text-sm font-bold uppercase text-black lg:text-xl">
+                <h2 className="text-xs font-semibold uppercase text-black lg:text-xl">
                   {title}
                 </h2>
-                <p className="font-serif text-sm leading-snug text-black lg:text-lg">
+                <p className="text-xs leading-normal text-black lg:text-base">
                   {description}
                 </p>
                 <button className="mx-auto w-auto rounded-3xl bg-primary-500 px-4 py-2 text-xs font-bold uppercase lg:text-sm lg:group-hover:bg-white lg:group-hover:text-primary-500">

@@ -3,6 +3,7 @@ import ProductSlider from "../components/ProductSlider";
 import BestSellers from "../components/BestSellers";
 import { Link } from "react-router-dom";
 import MainProductRail from "../components/MainProductRail";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const scalevariants = {
@@ -24,10 +25,11 @@ const Home = () => {
           muted
           playsInline
         >
+          <source src="/images/home_banner.webm" type="video/webm" />
           <source src="/images/home_banner.mp4" type="video/mp4" />
         </video>
         <div className="absolute bottom-8 flex w-full flex-col items-center lg:bottom-20">
-          <h2 className="text-center text-2xl font-bold uppercase text-white lg:text-6xl">
+          <h2 className="text-center text-2xl font-bold uppercase text-black lg:text-6xl">
             We Make Your Journey Beautiful
           </h2>
           <button className="mt-2 rounded-lg bg-primary-500 px-4 py-1 text-base font-semibold uppercase text-white transition-colors duration-200 hover:bg-primary-600 lg:mt-5 lg:py-2 lg:text-2xl">
@@ -74,14 +76,13 @@ const Home = () => {
           <h2 className="mb-2 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
             Best Sellers
           </h2>
-          <p className="mx-auto mb-4 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
+          <p className="mx-auto mb-4 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-lg lg:leading-loose">
             Turtees, the epitome of comfort and care for babies, offers a
             comprehensive range of baby essentials. Our feeding bottles are
             designed with precision to provide a seamless feeding experience.
             Engage and stimulate your little one’s development with our
             enchanting toys. For on-the-go convenience, explore our travel gear
-            collection. Grooming becomes a joy with our gentle products, while
-            bath time is transformed into
+            collection.
           </p>
           <BestSellers />
         </div>

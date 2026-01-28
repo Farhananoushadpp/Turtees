@@ -4,7 +4,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
-        serif: ["F29LT Zarid Display Regular", "serif"],
+        // serif: ["F29LT Zarid Display Regular", "serif"],
       },
       colors: {
         whatsapp: "#25D366",

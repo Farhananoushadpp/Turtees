@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const fadeUpVariants = {
@@ -24,7 +25,7 @@ const InstaPosts = () => {
         <h2 className="mb-2 text-center text-xl font-bold uppercase text-zinc-700 lg:mb-5 lg:text-5xl">
           The Edit
         </h2>
-        <p className="mx-auto mb-5 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-sm lg:leading-loose">
+        <p className="mx-auto mb-5 w-full text-center text-xs leading-relaxed text-zinc-500 lg:mb-12 lg:text-lg lg:leading-loose">
           The Edit is here to guide you through this incredible journey. We work
           with parenting experts to offer the advice and support you really
           need, talk to parents about their real-life experiences – plus there’s

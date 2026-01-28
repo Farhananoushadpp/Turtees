@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const scalevariants = {
@@ -54,7 +55,7 @@ const FeedingBottles = () => {
           <div className="mt-4 grid grid-cols-2 gap-2 lg:mt-10 lg:gap-12">
             <div className="relative overflow-hidden">
               <img
-                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-28 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight1.webp"
                 alt=""
               />
@@ -73,7 +74,7 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-28 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight2.webp"
                 alt=""
               />
@@ -90,7 +91,7 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-28 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight3.webp"
                 alt=""
               />
@@ -107,7 +108,7 @@ const FeedingBottles = () => {
             </div>
             <div className="relative overflow-hidden">
               <img
-                className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
+                className="h-28 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out lg:h-auto lg:rounded-3xl lg:hover:scale-105"
                 src="/images/feeding_bottles/highlight4.webp"
                 alt=""
               />
@@ -129,7 +130,7 @@ const FeedingBottles = () => {
         <div className="container relative mx-auto">
           <img
             src="/images/feeding_bottles/banner2.webp"
-            className="h-64 w-full rounded-3xl object-cover object-left lg:h-auto"
+            className="h-52 w-full rounded-3xl object-cover object-left lg:h-auto"
           />
           <div className="absolute left-10 top-1/2 w-full -translate-y-1/2">
             <motion.div
@@ -216,17 +217,17 @@ const FeedingBottles = () => {
               className="w-full rounded-3xl"
             />
             <motion.div
-              className="absolute bottom-4 left-4 top-auto w-full -translate-y-1/2 lg:bottom-auto lg:left-10 lg:top-1/2"
+              className="static bottom-4 left-4 top-auto w-full -translate-y-1/2 md:absolute lg:bottom-auto lg:left-10 lg:top-1/2"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-2xl font-semibold uppercase leading-tight text-white lg:text-5xl">
+              <h2 className="mt-3 text-center text-base font-medium uppercase leading-tight text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-white">
                 Anti Colic
               </h2>
-              <h6 className="mt-1 text-left text-lg text-white lg:mt-3 lg:text-3xl">
+              <h6 className="mt-1 hidden text-left text-lg text-white md:block lg:mt-3 lg:text-3xl">
                 Clinically tested
               </h6>
             </motion.div>
@@ -237,17 +238,17 @@ const FeedingBottles = () => {
               className="w-full rounded-3xl"
             />
             <motion.div
-              className="absolute bottom-4 left-4 top-auto w-full -translate-y-1/2 lg:bottom-auto lg:left-10 lg:top-1/2"
+              className="static bottom-4 left-4 top-auto w-full -translate-y-1/2 md:absolute lg:bottom-auto lg:left-10 lg:top-1/2"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-2xl font-semibold uppercase leading-tight text-white lg:text-5xl">
+              <h2 className="mt-3 text-center text-base font-medium uppercase leading-tight text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-white">
                 BPA Free
               </h2>
-              <h6 className="mt-1 text-left text-lg text-white lg:mt-3 lg:text-3xl">
+              <h6 className="mt-1 hidden text-left text-lg text-white md:block lg:mt-3 lg:text-3xl">
                 Gentle and secure feeding
               </h6>
             </motion.div>

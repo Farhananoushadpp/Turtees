@@ -9,9 +9,8 @@ const Footer = () => {
                 Contact Us
               </h6>
               <p className="mt-1 text-xs leading-relaxed text-zinc-500">
-                Turtees of Scotland, 22k Riverside Drive, Aberdeen Scotland,
-                United Kingdom UAE, KSA, Bahrain, Qatar, Oman, Kuwait, Jordan,
-                UK, India, China, Hongkong
+                Turtees of Scotland, UK, UAE, KSA, Bahrain, Qatar, Oman, Kuwait,
+                Jordan, UK, India, China, Hongkong
                 <br />
                 <br />
                 export@turteesglobal.com
@@ -92,28 +91,47 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <div className="col-span-12 flex items-center justify-center lg:col-span-9 lg:flex-col">
-              <div className="flex flex-row items-center gap-x-2">
-                <p className="text-sm text-zinc-700">Our customers say</p>
-                <h5 className="text-sm font-semibold text-black">Excellent</h5>
-                <div className="flex gap-x-1">
-                  <img className="w-5" src=".././images/icons/star.svg"></img>
-                  <img className="w-5" src=".././images/icons/star.svg"></img>
-                  <img className="w-5" src=".././images/icons/star.svg"></img>
-                  <img className="w-5" src=".././images/icons/star.svg"></img>
-                  <img className="w-5" src=".././images/icons/star.svg"></img>
+            <div className="col-span-12 grid items-center justify-center lg:col-span-9">
+              <div className="my-4 flex flex-col items-center gap-y-3 text-sm text-zinc-700 md:my-0 md:flex-row md:gap-x-2 lg:gap-y-0">
+                <div className="flex items-center gap-x-1">
+                  <p>Our customers say</p>
+                  <h5 className="font-semibold text-black">Excellent</h5>
                 </div>
-                <h5 className="text-sm font-semibold text-black">4.7</h5>
-                <p className="text-sm text-zinc-700">out of 5 based on</p>
-                <h5 className="text-sm font-semibold text-black">
-                  10,002 reviews
-                </h5>
-                {/* <div className="flex gap-1">
-                  <img className="w-4" src=".././images/icons/star2.svg" />
-                  <p className="text-sm text-zinc-700">Trustpilot</p>
-                </div> */}
+                <div className="flex gap-x-1">
+                  <img
+                    className="w-5"
+                    src=".././images/icons/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    className="w-5"
+                    src=".././images/icons/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    className="w-5"
+                    src=".././images/icons/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    className="w-5"
+                    src=".././images/icons/star.svg"
+                    alt="star"
+                  />
+                  <img
+                    className="w-5"
+                    src=".././images/icons/star.svg"
+                    alt="star"
+                  />
+                </div>
+                <div className="flex items-center gap-x-1">
+                  <h5 className="font-semibold text-black">4.7</h5>
+                  <p>out of 5 based on</p>
+                  <h5 className="font-semibold text-black">10,002 reviews</h5>
+                </div>
               </div>
-              <p className="mt-4 self-center text-center text-sm font-normal text-zinc-600">
+
+              <p className="self-center text-center text-base font-normal text-zinc-600">
                 Copyright © turtees | Designed by tarah.ae
               </p>
             </div>

@@ -22,6 +22,8 @@ const Header = () => {
       setActiveMenu("breast-pumbs");
     } else if (location.pathname === "/feeding-bottles") {
       setActiveMenu("feeding-bottles");
+    } else if (location.pathname === "/baby-foods") {
+      setActiveMenu("baby-foods");
     } else {
       setActiveMenu("");
     }
@@ -52,18 +54,18 @@ const Header = () => {
     >
       <div className="mx-auto max-w-screen-xl">
         <div className="grid grid-cols-12 items-center">
-          <div className="col-span-3 md:col-span-4 lg:col-span-2">
+          <div className="col-span-3 md:col-span-2 lg:col-span-2">
             <Link className="block w-11/12 lg:w-4/5" to="/">
               <img
                 src="/images/logo.svg"
                 alt="Logo"
-                className="h-auto w-full"
+                className="h-auto w-full md:w-11/12 lg:w-full"
               />
             </Link>
           </div>
-          <div className="col-span-9 md:col-span-4 lg:col-span-10">
+          <div className="col-span-9 md:col-span-10 lg:col-span-10">
             <div className="grid grid-cols-12">
-              <div className="relative col-span-10 pl-1 md:col-span-9 md:pl-0">
+              <div className="relative col-span-10 w-full pl-1 md:col-span-9 md:w-11/12 md:pl-0 lg:w-full">
                 <input
                   className="w-full rounded-3xl bg-white px-4 py-3 text-xs placeholder:text-zinc-500 lg:text-sm"
                   type="text"
@@ -161,7 +163,7 @@ const Header = () => {
               </div>
             </div>
             <nav className="col-span-12 hidden md:col-span-8 md:block lg:col-span-12">
-              <div className="mt-6 flex justify-end space-x-5 font-semibold uppercase tracking-[0.25px] text-zinc-600 md:text-base lg:text-sm">
+              <div className="mt-6 flex justify-end text-center font-semibold uppercase tracking-[0.25px] text-zinc-600 md:space-x-3 md:text-xs lg:space-x-5 lg:text-sm">
                 <Link
                   to="/"
                   className={`transition-colors duration-200 hover:text-black ${
@@ -179,6 +181,14 @@ const Header = () => {
                   Feeding Bottles
                 </Link>
                 <Link
+                  to="/baby-foods"
+                  className={`transition-colors duration-200 hover:text-black ${
+                    activeMenu === "baby-foods" ? "text-primary-600" : ""
+                  }`}
+                >
+                  Baby Foods
+                </Link>
+                <Link
                   to="/breast-pumbs"
                   className={`transition-colors duration-200 hover:text-black ${
                     activeMenu === "breast-pumbs" ? "text-primary-600" : ""
@@ -186,14 +196,61 @@ const Header = () => {
                 >
                   Natural Feedings
                 </Link>
-                <Link
-                  to="/"
-                  className={`transition-colors duration-200 hover:text-black ${
-                    activeMenu === "" ? "text-primary-600" : ""
-                  }`}
-                >
-                  Accessories
-                </Link>
+                <div class="group relative">
+                  <Link
+                    to="/"
+                    className={`transition-colors duration-200 hover:text-black ${
+                      activeMenu === "" ? "text-primary-600" : ""
+                    }`}
+                  >
+                    Accessories
+                    <div class="invisible absolute left-1/2 top-full z-50 hidden -translate-x-1/2 transform gap-x-10 whitespace-nowrap rounded-2xl bg-black/70 p-6 text-white opacity-0 shadow-xl transition-all duration-300 ease-in-out group-hover:visible group-hover:translate-y-2 group-hover:opacity-100 md:flex">
+                      <div class="text-center">
+                        <img
+                          src="/images/dropdownmenu/bottle_steriliser.png"
+                          alt="Bottle Steriliser"
+                          class="mx-auto mb-3 h-24 w-auto"
+                        />
+                        <div class="text-xs font-semibold leading-tight">
+                          BOTTLE STERILISER
+                          <br />& DRIER
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <img
+                          src="/images/dropdownmenu/high_chair.png"
+                          alt="High Chair"
+                          class="mx-auto mb-3 h-24 w-auto"
+                        />
+                        <div class="text-xs font-semibold">HIGH CHAIR</div>
+                      </div>
+                      <div class="text-center">
+                        <img
+                          src="/images/dropdownmenu/kids_scooter.png"
+                          alt="Kids Scooter"
+                          class="mx-auto mb-3 h-24 w-auto"
+                        />
+                        <div class="text-xs font-semibold">KIDS SCOOTER</div>
+                      </div>
+                      <div class="text-center">
+                        <img
+                          src="/images/dropdownmenu/walking_aid.png"
+                          alt="Walking Aid"
+                          class="mx-auto mb-3 h-24 w-auto"
+                        />
+                        <div class="text-xs font-semibold">WALKING AID</div>
+                      </div>
+                      <div class="text-center">
+                        <img
+                          src="/images/dropdownmenu/baby_carrier.png"
+                          alt="Baby Carrier"
+                          class="mx-auto mb-3 h-24 w-auto"
+                        />
+                        <div class="text-xs font-semibold">BABY CARRIER</div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
                 <Link
                   to="/"
                   className={`transition-colors duration-200 hover:text-black ${
@@ -251,6 +308,15 @@ const Header = () => {
                     onClick={closeMobileMenu}
                   >
                     Feeding Bottles
+                  </Link>
+                  <Link
+                    to="/baby-foods"
+                    className={`border-b border-zinc-300 p-3 ${
+                      activeMenu === "baby-foods" ? "text-primary-600" : ""
+                    }`}
+                    onClick={closeMobileMenu}
+                  >
+                    Baby Foods
                   </Link>
                   <Link
                     to="/breast-pumbs"

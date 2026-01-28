@@ -1,26 +1,27 @@
 import BreastPumpProducts from "../components/BreastPumbProducts";
 import { useEffect } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-
-const scalevariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-const slideUpVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
 
 const BreastPumbs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const scalevariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
+  const slideUpVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <main>
       <section className="relative">
         <img
-          src="/images/breast_pumbs/banner.webp"
+          src="/images/home_section_banner1.webp"
           className="h-72 w-full object-cover lg:h-auto"
         />
         <div className="absolute left-3 top-1/2 w-full -translate-y-1/2 lg:left-0 lg:top-1/2">
@@ -133,7 +134,7 @@ const BreastPumbs = () => {
         <div className="container relative mx-auto">
           <img
             src="/images/breast_pumbs/banner2.webp"
-            className="h-60 w-full rounded-3xl object-cover object-left lg:h-auto"
+            className="h-44 w-full rounded-3xl object-cover object-left lg:h-auto"
           />
           <motion.div
             className="absolute left-10 top-10 w-full"
@@ -174,6 +175,10 @@ const BreastPumbs = () => {
                 playsInline
               >
                 <source
+                  src="/images/breast_pumbs/banner_video.webm"
+                  type="video/webm"
+                />
+                <source
                   src="/images/breast_pumbs/banner_video.mp4"
                   type="video/mp4"
                 />
@@ -194,7 +199,7 @@ const BreastPumbs = () => {
                 Turtles Wearable Breast Pumb
               </h6>
               <div className="grid grid-cols-2 gap-7 text-center lg:grid-cols-1 lg:gap-16 lg:text-left">
-                <div>
+                <div className="hidden md:block">
                   <h2 className="text-2xl font-bold uppercase text-primary-700 lg:text-4xl">
                     246G
                   </h2>
@@ -276,19 +281,19 @@ const BreastPumbs = () => {
               className="w-full rounded-3xl"
             />
             <motion.div
-              className="absolute left-5 top-1/4 w-full -translate-y-1/2 lg:left-10"
+              className="static left-5 top-1/4 w-full -translate-y-1/2 md:absolute lg:left-10"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-5xl lg:leading-tight">
+              <h2 className="mt-3 text-center text-base font-medium uppercase leading-snug text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-black lg:leading-tight">
                 Frequency
                 <br />
                 Conversion
               </h2>
-              <h6 className="mt-1 text-left text-lg text-black lg:mt-3 lg:text-3xl">
+              <h6 className="mt-1 hidden text-left text-lg text-black md:block lg:mt-3 lg:text-3xl">
                 small body
                 <br />
                 free your hands
@@ -301,19 +306,19 @@ const BreastPumbs = () => {
               className="w-full rounded-3xl"
             />
             <motion.div
-              className="absolute left-5 top-1/4 w-full -translate-y-1/2 lg:left-10"
+              className="static left-5 top-1/4 w-full -translate-y-1/2 md:absolute lg:left-10"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-5xl lg:leading-tight">
+              <h2 className="mt-3 text-center text-base font-medium uppercase leading-snug text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-black lg:leading-tight">
                 Exclusive
                 <br />
                 Milk Bottle
               </h2>
-              <h6 className="mt-1 text-left text-lg text-black lg:mt-3 lg:text-3xl">
+              <h6 className="mt-1 hidden text-left text-lg text-black md:block lg:mt-3 lg:text-3xl">
                 take out the clave
                 <br />
                 pour breast milk

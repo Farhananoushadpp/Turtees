@@ -7,15 +7,17 @@ const ProductSlider = () => {
   const products = [
     {
       image: "/images/home_slider/baby_food_processor.webp",
-      title: "Baby Food Processor",
+      title: "Food Processor",
     },
     {
-      image: "/images/home_slider/baby_strollers.webp",
-      title: "Baby Strollers",
-    },
-    { image: "/images/home_slider/baby_walkers.webp", title: "Baby Walkers" },
-    { image: "/images/home_slider/bath_supports.webp", title: "Bath Supports" },
-    { image: "/images/home_slider/breast_pads.webp", title: "Breast Pads" },
+      image: "/images/home_slider/baby_bottle_warmer.webp",
+      title: "Bottle& food Warmer",
+    }, 
+    { image: "/images/home_slider/breastpad.webp", title: "Reusable nursing pad" },
+    { image: "/images/home_slider/nipple_shields.webp", title: "Silver nipple cup" },
+    { image: "/images/home_slider/shaper.webp", title: "Postpartum boxer" },
+    { image: "/images/home_slider/baby_bottle_brush.webp", title: "Bottle brush" },
+    { image: "/images/home_slider/baby_bath_tub.webp", title: "Bath supports" },
   ];
 
   return (
