@@ -107,10 +107,10 @@ const ProductCard = ({
     <img
       src={img}
       alt={title}
-      className={`h-80 w-full rounded-3xl object-cover ${img_position} lg:h-auto`}
+      className={`h-48 w-full rounded-2xl object-cover sm:h-56 md:h-64 lg:h-auto ${img_position}`}
     />
     <motion.div
-      className={`lg:absolute ${position} relative mx-auto -mt-20 flex h-auto w-10/12 flex-col justify-between rounded-2xl lg:top-16 lg:-m-0 lg:h-[540px] lg:w-5/12 ${bg} p-5 lg:p-7`}
+      className={`relative mx-auto -mt-16 flex h-auto w-11/12 flex-col justify-between rounded-xl sm:-mt-20 sm:w-10/12 md:-mt-24 md:w-9/12 lg:absolute ${position} lg:top-16 lg:-m-0 lg:h-[540px] lg:w-5/12 ${bg} p-3 sm:p-4 md:p-5 lg:p-7`}
       variants={scalevariants}
       initial="hidden"
       whileInView="visible"
@@ -118,20 +118,20 @@ const ProductCard = ({
       viewport={{ once: true }}
     >
       <div>
-        <h3 className="text-sm font-bold uppercase leading-tight lg:text-5xl lg:leading-snug">
+        <h3 className="text-sm font-bold uppercase leading-tight sm:text-base md:text-lg lg:text-5xl lg:leading-snug">
           {title}
         </h3>
-        <span className="text-sm font-medium uppercase leading-tight lg:text-5xl">
+        <span className="text-sm font-medium uppercase leading-tight sm:text-base md:text-lg lg:text-5xl">
           {subtitle}
         </span>
         <p
-          className={`mt-1 text-sm !leading-normal lg:mt-3 lg:text-2xl ${text}`}
+          className={`mt-1 text-xs !leading-normal sm:mt-2 sm:text-sm md:mt-3 md:text-base lg:mt-3 lg:text-2xl ${text}`}
         >
           {description}
         </p>
       </div>
       <button
-        className={`${button} lg-py-2 mt-2 self-start rounded-full bg-white px-3 py-1 text-xs font-bold uppercase transition-colors duration-200 hover:bg-primary-500 hover:text-white lg:mt-0 lg:px-6 lg:text-2xl`}
+        className={`${button} mt-2 self-start rounded-full bg-white px-2 py-1 text-xs font-bold uppercase transition-colors duration-200 hover:bg-primary-500 hover:text-white sm:mt-3 sm:px-3 sm:py-1.5 sm:text-sm md:mt-4 md:px-4 md:py-2 md:text-base lg:mt-0 lg:px-6 lg:py-2 lg:text-2xl`}
       >
         Explore
       </button>
@@ -141,7 +141,7 @@ const ProductCard = ({
 
 export default function BestSellers() {
   return (
-    <div className="flex flex-wrap gap-4 px-3 lg:gap-28 lg:px-10">
+    <div className="flex flex-col gap-2 px-4 sm:gap-3 sm:px-6 md:gap-4 md:px-8 lg:flex-wrap lg:gap-12 lg:px-10">
       {products.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}

@@ -224,10 +224,10 @@ const FeedingBottles = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="mt-3 text-center text-base font-medium uppercase leading-tight text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-white">
+              <h2 className="mt-3 text-center text-base font-medium uppercase leading-tight text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-black">
                 Anti Colic
               </h2>
-              <h6 className="mt-1 hidden text-left text-lg text-white md:block lg:mt-3 lg:text-3xl">
+              <h6 className="mt-1 hidden text-left text-lg text-black md:block lg:mt-3 lg:text-3xl">
                 Clinically tested
               </h6>
             </motion.div>
@@ -245,10 +245,10 @@ const FeedingBottles = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="mt-3 text-center text-base font-medium uppercase leading-tight text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-white">
+              <h2 className="mt-3 text-center text-base font-medium uppercase leading-tight text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-black">
                 BPA Free
               </h2>
-              <h6 className="mt-1 hidden text-left text-lg text-white md:block lg:mt-3 lg:text-3xl">
+              <h6 className="mt-1 hidden text-left text-lg text-black md:block lg:mt-3 lg:text-3xl">
                 Gentle and secure feeding
               </h6>
             </motion.div>

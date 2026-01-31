@@ -66,9 +66,9 @@ const BreastPumbs = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                Core Frequency
+                Feather-light
                 <br />
-                Conversion
+                Comfort
               </motion.h2>
             </div>
             <div className="relative overflow-hidden">
@@ -103,9 +103,9 @@ const BreastPumbs = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                Wearable
+                Heat-assisted
                 <br />
-                Breast Pumb
+                Massage
               </motion.h2>
             </div>
             <div className="relative overflow-hidden">
@@ -122,9 +122,11 @@ const BreastPumbs = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                Intellectual
+                Gentle
                 <br />
-                Remote Control
+                Heating for
+                <br />
+                better flow
               </motion.h2>
             </div>
           </div>
@@ -146,12 +148,14 @@ const BreastPumbs = () => {
           >
             <div className="col-span-5 flex flex-col">
               <h2 className="text-left text-xl font-semibold uppercase leading-snug text-black lg:text-5xl lg:leading-tight">
-                APP CONTROL
+                POWERED FOR FREEDOM
               </h2>
               <h6 className="mt-1 text-left text-lg leading-snug text-black lg:mt-3 lg:text-3xl">
-                App Control with
+                Cordless pumping with long-lasting
                 <br />
-                Bluetooth Connectivity
+                battery life to keep up 
+                <br />
+                with your busy day
               </h6>
             </div>
           </motion.div>
@@ -281,7 +285,7 @@ const BreastPumbs = () => {
               className="w-full rounded-3xl"
             />
             <motion.div
-              className="static left-5 top-1/4 w-full -translate-y-1/2 md:absolute lg:left-10"
+              className="static left-5 top-8 w-full md:absolute lg:left-10"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
@@ -289,14 +293,16 @@ const BreastPumbs = () => {
               viewport={{ once: true }}
             >
               <h2 className="mt-3 text-center text-base font-medium uppercase leading-snug text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-black lg:leading-tight">
-                Frequency
+                4 massage modes &
                 <br />
-                Conversion
+                9 suction levels
               </h2>
               <h6 className="mt-1 hidden text-left text-lg text-black md:block lg:mt-3 lg:text-3xl">
-                small body
+                comfortable, customizable,
                 <br />
-                free your hands
+                hospital-grade suction for
+                <br />
+                efficient milk flow.
               </h6>
             </motion.div>
           </div>
@@ -306,7 +312,7 @@ const BreastPumbs = () => {
               className="w-full rounded-3xl"
             />
             <motion.div
-              className="static left-5 top-1/4 w-full -translate-y-1/2 md:absolute lg:left-10"
+              className="static left-5 top-8 w-full md:absolute lg:left-10"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
@@ -314,14 +320,14 @@ const BreastPumbs = () => {
               viewport={{ once: true }}
             >
               <h2 className="mt-3 text-center text-base font-medium uppercase leading-snug text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold md:text-black lg:leading-tight">
-                Exclusive
+                Love the
                 <br />
-                Milk Bottle
+                way it flows
               </h2>
               <h6 className="mt-1 hidden text-left text-lg text-black md:block lg:mt-3 lg:text-3xl">
-                take out the clave
+                easy to remove,easy to use,
                 <br />
-                pour breast milk
+                gentle milk flow  
               </h6>
             </motion.div>
           </div>

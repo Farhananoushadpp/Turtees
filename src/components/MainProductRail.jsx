@@ -59,17 +59,17 @@ const MainProductRail = () => {
             <Link to={link}>
               <div className="group grid transform gap-y-2 rounded-2xl p-0 text-center transition-transform duration-300 ease-in-out lg:gap-y-3 lg:p-3 lg:hover:scale-105 lg:hover:bg-primary-500">
                 <img
-                  className="mb-2 w-full rounded-2xl"
+                  className="mb-2 w-full rounded-2xl object-cover sm:mb-3 md:mb-4 lg:mb-2"
                   src={imgSrc}
                   alt={title}
                 />
-                <h2 className="text-xs font-semibold uppercase text-black lg:text-xl">
+                <h2 className="mb-1 text-sm font-semibold uppercase text-black sm:mb-2 sm:text-base md:text-lg lg:mb-2 lg:text-xl">
                   {title}
                 </h2>
-                <p className="text-xs leading-normal text-black lg:text-base">
+                <p className="mb-2 text-xs leading-relaxed text-black sm:mb-3 sm:text-sm md:text-base lg:mb-3 lg:text-base lg:leading-normal">
                   {description}
                 </p>
-                <button className="mx-auto w-auto rounded-3xl bg-primary-500 px-4 py-2 text-xs font-bold uppercase lg:text-sm lg:group-hover:bg-white lg:group-hover:text-primary-500">
+                <button className="mx-auto w-auto rounded-3xl bg-primary-500 px-3 py-1.5 text-xs font-bold uppercase text-white transition-colors duration-300 hover:bg-primary-600 sm:px-4 sm:py-2 sm:text-sm md:px-5 md:py-2.5 md:text-base lg:px-4 lg:py-2 lg:text-sm lg:group-hover:bg-white lg:group-hover:text-primary-500">
                   Explore More
                 </button>
               </div>

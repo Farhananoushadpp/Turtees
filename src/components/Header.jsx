@@ -48,32 +48,32 @@ const Header = () => {
     <header
       className={`${
         isScrolled
-          ? "fixed top-0 z-20 w-full animate-slideDown bg-primary-50 p-4 drop-shadow-md lg:p-6"
-          : "relative w-full bg-primary-50 p-3 lg:p-6"
+          ? "fixed top-0 z-20 w-full animate-slideDown bg-primary-50 p-2 drop-shadow-md sm:p-3 md:p-4 lg:p-6"
+          : "relative w-full bg-primary-50 p-2 sm:p-3 md:p-4 lg:p-6"
       }`}
     >
-      <div className="mx-auto max-w-screen-xl">
-        <div className="grid grid-cols-12 items-center">
-          <div className="col-span-3 md:col-span-2 lg:col-span-2">
-            <Link className="block w-11/12 lg:w-4/5" to="/">
+      <div className="mx-auto max-w-screen-xl px-2 sm:px-3 md:px-4">
+        <div className="grid grid-cols-12 items-center gap-2">
+          <div className="col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-2">
+            <Link className="block w-3/4 sm:w-4/5 md:w-11/12 lg:w-4/5" to="/">
               <img
                 src="/images/logo.svg"
                 alt="Logo"
-                className="h-auto w-full md:w-11/12 lg:w-full"
+                className="h-auto w-full"
               />
             </Link>
           </div>
-          <div className="col-span-9 md:col-span-10 lg:col-span-10">
-            <div className="grid grid-cols-12">
-              <div className="relative col-span-10 w-full pl-1 md:col-span-9 md:w-11/12 md:pl-0 lg:w-full">
+          <div className="col-span-6 sm:col-span-8 md:col-span-9 lg:col-span-10">
+            <div className="grid grid-cols-12 items-center gap-2">
+              <div className="relative col-span-12 order-2 w-full sm:order-1 sm:col-span-9 md:col-span-9 md:w-11/12 lg:w-full">
                 <input
-                  className="w-full rounded-3xl bg-white px-4 py-3 text-xs placeholder:text-zinc-500 lg:text-sm"
+                  className="w-full rounded-3xl bg-white px-3 py-2 text-xs placeholder:text-zinc-500 sm:px-4 sm:py-2.5 sm:text-sm md:px-4 md:py-3 md:text-sm lg:px-4 lg:py-3 lg:text-sm"
                   type="text"
                   placeholder="What are you looking for"
                 />
-                <button className="absolute right-4 top-1/2 flex -translate-y-1/2 gap-x-2 lg:right-6">
-                  <img className="w-4 lg:w-5" src="/images/icons/search.svg" />
-                  <p className="hidden text-sm font-bold text-black lg:block">
+                <button className="absolute right-2 top-1/2 flex -translate-y-1/2 gap-x-1 sm:right-3 sm:gap-x-2 md:right-4 lg:right-6">
+                  <img className="w-3 h-3 sm:w-4 sm:h-4 md:w-4 md:h-4 lg:w-5 lg:h-5" src="/images/icons/search.svg" />
+                  <p className="hidden text-xs font-bold text-black sm:text-sm md:text-sm lg:block lg:text-sm">
                     Search
                   </p>
                 </button>
