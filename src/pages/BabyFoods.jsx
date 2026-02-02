@@ -49,7 +49,7 @@ const BabyFoods = () => {
           <h2 className="text-center text-lg font-bold uppercase text-zinc-700 sm:text-xl md:text-2xl lg:text-5xl">
             Hightlights
           </h2>
-          <div className="mt-4 grid grid-cols-1 gap-4 lg:mt-10 lg:grid-cols-2 lg:gap-12">
+          <div className="mt-4 grid grid-cols-2 gap-4 lg:mt-10 lg:grid-cols-2 lg:gap-12">
             <div className="relative overflow-hidden">
               <img
                 className="h-40 w-full transform rounded-xl object-cover transition-transform duration-300 ease-in-out sm:h-48 md:h-56 lg:h-auto lg:rounded-3xl lg:hover:scale-105"
@@ -132,27 +132,27 @@ const BabyFoods = () => {
         </div>
       </section>
       <section className="bg-white px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-3 lg:pt-12">
-        <div className="container mx-auto grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-12 lg:gap-x-12">
+        <div className="container mx-auto grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-12 lg:gap-x-12">
           <div className="relative col-span-1 lg:col-span-6">
             <img
               src="/images/baby_foods/blendermode.webp"
               className="h-48 w-full rounded-2xl object-cover sm:h-56 md:h-64 lg:h-auto lg:w-full lg:rounded-3xl"
             />
             <motion.div
-              className="absolute right-4 top-4 w-full max-w-xs text-right sm:right-6 sm:top-6 md:right-8 md:top-8 lg:right-10 lg:top-5 lg:w-auto lg:text-right"
+              className="absolute right-2 top-2 w-full md:absolute lg:right-4 lg:top-2"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-right text-sm font-medium uppercase leading-snug text-primary-800 sm:text-base md:text-lg md:font-semibold lg:text-right lg:text-5xl lg:font-semibold lg:text-primary-800 lg:leading-tight">
+              <h2 className="text-right text-sm font-medium uppercase leading-snug text-primary-800 md:mt-0 md:text-right md:text-5xl md:font-semibold lg:leading-tight">
                 THOUGHTFULLY
                 <br />
                 BLENDED FOR
                 <br />
                 EVERY STAGE
-              </h2>
+                </h2>
             </motion.div>
           </div>
           <div className="relative col-span-1 lg:col-span-6">
@@ -161,18 +161,18 @@ const BabyFoods = () => {
               className="h-48 w-full rounded-2xl object-cover sm:h-56 md:h-64 lg:h-auto lg:w-full lg:rounded-3xl"
             />
             <motion.div
-              className="absolute left-4 top-4 w-full max-w-xs text-left sm:left-6 sm:top-6 md:left-8 md:top-8 lg:left-10 lg:top-5 lg:w-auto lg:text-left"
+              className="absolute left-2 top-2 w-full md:absolute lg:left-4 lg:top-2"
               variants={slideUpVariants}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-left text-sm font-medium uppercase leading-snug text-primary-800 sm:text-base md:text-lg md:font-semibold lg:text-left lg:text-5xl lg:font-semibold lg:text-primary-800 lg:leading-tight">
+              <h2 className="text-left text-sm font-medium uppercase leading-snug text-primary-800 md:mt-0 md:text-left md:text-5xl md:font-semibold lg:leading-tight">
                  MADE
                 <br />
                  WITH CARE.
-                 <br/>
+                <br/>
                  BUILT FOR BABIES.
               </h2>
             </motion.div>

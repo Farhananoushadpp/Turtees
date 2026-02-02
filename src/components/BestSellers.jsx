@@ -110,7 +110,7 @@ const ProductCard = ({
       className={`h-48 w-full rounded-2xl object-cover sm:h-56 md:h-64 lg:h-auto ${img_position}`}
     />
     <motion.div
-      className={`relative mx-auto -mt-16 flex h-auto w-11/12 flex-col justify-between rounded-xl sm:-mt-20 sm:w-10/12 md:-mt-24 md:w-9/12 lg:absolute ${position} lg:top-16 lg:-m-0 lg:h-[540px] lg:w-5/12 ${bg} p-3 sm:p-4 md:p-5 lg:p-7`}
+      className={`relative mx-auto -mt-16 flex h-auto w-11/12 flex-col justify-between rounded-xl sm:-mt-20 sm:w-10/12 md:-mt-24 md:w-9/12 lg:absolute ${position} lg:top-16 lg:-m-0 lg:h-[480px] lg:w-5/12 ${bg} p-3 sm:p-4 md:p-5 lg:p-7`}
       variants={scalevariants}
       initial="hidden"
       whileInView="visible"
@@ -141,7 +141,7 @@ const ProductCard = ({
 
 export default function BestSellers() {
   return (
-    <div className="flex flex-col gap-2 px-4 sm:gap-3 sm:px-6 md:gap-4 md:px-8 lg:flex-wrap lg:gap-12 lg:px-10">
+    <div className="flex flex-col gap-2 px-4 sm:gap-3 sm:px-6 md:gap-4 md:px-8 lg:flex-wrap lg:gap-8 lg:px-10">
       {products.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}

@@ -43,7 +43,7 @@ const ProductSlider = () => {
           index, // Duplicate items for seamless effect
         ) => (
           <SwiperSlide key={index} className="bg-white text-center">
-            <img src={product.image} alt={product.title} className="h-32 w-32 mx-auto mb-4 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-44 lg:w-44" />
+            <img src={product.image} alt={product.title} className="h-40 w-40 mx-auto mb-4 sm:h-80 sm:w-80 md:h-88 md:w-88 lg:h-96 lg:w-96" />
             <div className="flex w-full items-center justify-between px-4 py-4 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-5 lg:py-5">
               <h3 className="text-left text-sm font-semibold uppercase text-black sm:text-base md:text-lg lg:text-xl">
                 {product.title}
